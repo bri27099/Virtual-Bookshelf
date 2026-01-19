@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { 
+    background: url('bookshelf_bg.png') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif;
+  }
+
+  h2 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 25px;
+    border-radius: 30px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  /* The ornate white shelf container */
+  .shelf-display {
+    background: url('Untitled.png') no-repeat center;
+    background-size: contain;
+    width: 700px;  /* Adjust width to match your shelf.png scale */
+    height: 900px; /* Adjust height to match your shelf.png scale */
+    position: relative; 
+  }
+
+  .book {
+    position: absolute;
+    width: 65px; /* Adjust book size to fit the ornate shelf */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.4));
+  }
+
+  .book img {
+    width: 100%;
+    display: block;
+    border-radius: 2px 4px 4px 2px;
+  }
+
+  .book:hover {
+    transform: scale(1.2) translateY(-10px);
+    filter: drop-shadow(8px 10px 12px rgba(0,0,0,0.5)) brightness(1.1);
+    z-index: 100;
+  }
+
+  /* --- POSITIONING AREA --- */
+  /* Change 'top' to move up/down | Change 'left' to move side-to-side */
+  
+  /* Shelf 1 */
+  .b1 { top: 19%; left: 20%; } 
+  .b2 { top: 19%; left: 30%; }
+  .b3 { top: 19%; left: 40%; }
+  .b4 { top: 19%; left: 50%; }
+  .b5 { top: 19%; left: 60%; }
+
+  /* Shelf 2 */
+  .b6 { top: 38%; left: 20%; }
+  .b7 { top: 38%; left: 30%; }
+  .b8 { top: 38%; left: 40%; }
+  .b9 { top: 38%; left: 50%; }
+  .b10 { top: 38%; left: 60%; }
+
+  /* Shelf 3 */
+  .b11 { top: 56%; left: 20%; }
+  .b12 { top: 56%; left: 30%; }
+  .b13 { top: 56%; left: 40%; }
+  .b14 { top: 56%; left: 50%; }
+
+</style>
+</head>
+<body>
+
+<h2>Brinda's 2025 Reading Shelf</h2>
+
+<div class="shelf-display">
+  <div class="book b4"><img src="https://m.media-amazon.com/images/I/51iDejsms3L._UF1000,1000_QL80_.jpg" alt="Song of Achilles"></div>
+  <div class="book b2"><img src="https://m.media-amazon.com/images/I/713e4Yk6brL._AC_UF1000,1000_QL80_.jpg" alt="Gone Girl"></div>
+  <div class="book b3"><img src="https://m.media-amazon.com/images/I/715BJnpyTFL._AC_UF1000,1000_QL80_.jpg" alt="Counter attacks at thirty"></div>
+  <div class="book b1"><img src="https://m.media-amazon.com/images/I/81CtwM2bShL._AC_UF1000,1000_QL80_.jpg" alt="Namesake"></div>
+  <div class="book b5"><img src="https://m.media-amazon.com/images/I/81LGdZc+OOL._AC_UF1000,1000_QL80_.jpg" alt="Housemaid"></div>
+
+  <div class="book b6"><img src="https://m.media-amazon.com/images/I/81wUVpREPSL._AC_UF1000,1000_QL80_.jpg" alt="Bell jar"></div>
+  <div class="book b7"><img src="https://m.media-amazon.com/images/I/71mcfORV-fL._UF1000,1000_QL80_.jpg" alt="Conv w friends"></div>
+  <div class="book b8"><img src="https://m.media-amazon.com/images/I/71lNPM9DwDL._UF1000,1000_QL80_.jpg" alt="vegetarian"></div>
+  <div class="book b9"><img src="https://m.media-amazon.com/images/I/81QX6Ypm1FL._UF1000,1000_QL80_.jpg" alt="perfume"></div>
+  <div class="book b10"><img src="https://m.media-amazon.com/images/I/81ABX2HJChL._AC_UF1000,1000_QL80_.jpg" alt="honjin"></div>
+
+  <div class="book b11"><img src="https://m.media-amazon.com/images/I/91IoQbOhRlL._AC_UF1000,1000_QL80_.jpg" alt="morisaki"></div>
+  <div class="book b12"><img src="https://m.media-amazon.com/images/I/81JDmCKnv0L._AC_UF1000,1000_QL80_.jpg" alt="ove"></div>
+  <div class="book b13"><img src="https://m.media-amazon.com/images/I/81DLzi1g+yL._AC_UF1000,1000_QL80_.jpg" alt="misery"></div>
+  <div class="book b14"><img src="https://m.media-amazon.com/images/I/B1eAVSHxJ4L._AC_UF1000,1000_QL80_.jpg" alt="circe"></div>
+</div>
+
+</body>
+</html>
